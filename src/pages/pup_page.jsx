@@ -7,7 +7,7 @@ class Queue extends Array {
   }
 }
 
-export default function () {
+export default function PupPage() {
   const [bookingNo, setBookingNo] = useState('')
   const [routeCode, setRouteCode] = useState('')
   const [scannable, setScannable] = useState(false)
