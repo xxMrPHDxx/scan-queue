@@ -26,14 +26,15 @@ export default function Home() {
     if (!success) Swal.fire('Error', message, 'error')
     else {
       Swal.fire('Success', 'Login success!', 'success')
-      sessionStorage.setItem('loggedInUser', username)
+      // sessionStorage.setItem('loggedInUser', username)
+      redirect('/pup_page')
     }
     setLoading(false)
   }
 
-  if (sessionStorage.loggedInUser) {
-    return redirect('/pup_page')
-  }
+  // if (sessionStorage.loggedInUser) {
+  //   return redirect('/pup_page')
+  // }
 
   const canLogin = !loading && username && password
 
